@@ -30,5 +30,5 @@ mehs = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /\b(meh)\b/i, (msg) ->
-    msg.send msg.random meh
+    robot.hear /\b(meh)\b/i, (msg) ->
+          msg.send msg.random mehs
