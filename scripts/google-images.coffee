@@ -42,4 +42,6 @@ imageMe = (msg, query, animated, faces, cb) ->
       if images?.length > 0
         image  = msg.random images
         cb "#{image.unescapedUrl}#.png"
+        msg.post "https://api.twitter.com/1.1/statuses/update.json", '2518113282-xOyigATjeMAesDrzzeN5TkU5uKmBbms0TG4hF3S', 'H8cYmlP5t9G9sqDmCXExaz3SY2oAcBs8NKPCu8DkFS0z1', { status: "@#{image.unescapedUrl}", in_reply_to_status_id: in_reply_to_status_id },'UTF-8',  (error, data, response) 
+      
 
